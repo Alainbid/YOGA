@@ -145,7 +145,6 @@ const utils = {
     });
   },
 
-
   //**************  SUPPRIMER UN ELEMENT */
 
   deleteItem: function () {
@@ -213,7 +212,7 @@ const page = {
       .join("");
 
     utils.pageContent(
-      "Paramétrage <i id='reboot' class='fas fa-undo'></i>",
+      "Paramétrage <div class='tooltip'><i id='reboot' class='fas fa-undo'/><span class='tooltiptext'>Réinitialiser les exercices</span></div>",
       "<ul>" + mapArray + "</ul>",
       // "Commencer"
       "<button id='start'>Commencer</button>"
