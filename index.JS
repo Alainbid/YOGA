@@ -56,7 +56,7 @@ class Exercise {
 
         this.updateCountdown();
       }
-    }, 1000);
+    }, 100);
 
     if (stopActif) {
       clearTimeout(timeoutActif);
