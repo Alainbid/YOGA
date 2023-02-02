@@ -28,6 +28,7 @@ h1 {
   font-size: 2.2rem;
   letter-spacing: 2px;
   margin: 25px 0 25px;
+  color: rgb(175, 188, 207);
 }
 .fa-undo {
   font-size: 0.7rem;
@@ -35,8 +36,8 @@ h1 {
   padding: 10px 14px;
   border-radius: 9px;
   margin-left: 15px;
-  background: #c4ddfc8a;
-  box-shadow: -20px 20px 60px #2c4761, 20px -20px 60px #3b4368;
+  background: #54606e;
+  box-shadow: -20px 20px 50px #2c4761, -20px 20px 50px #e2e4f1b0;
   cursor: pointer;
   transform: translateY(-5px);
   transition: 0.2s;
