@@ -24,6 +24,7 @@ let stopActif = false;
   }
 })();
 
+//************  CLASS EXERCISE  */
 class Exercise {
   constructor() {
     this.index = 0;
@@ -55,11 +56,11 @@ class Exercise {
 
         this.updateCountdown();
       }
-    }, 100);
+    }, 1000);
 
     if (stopActif) {
       clearTimeout(timeoutActif);
-      return page.finish();
+      return page.lobby();
     }
 
     this.secondes < 10 ? (s = "0" + this.secondes) : (s = this.secondes);
@@ -143,6 +144,8 @@ const utils = {
       });
     });
   },
+
+
   //**************  SUPPRIMER UN ELEMENT */
 
   deleteItem: function () {
@@ -185,41 +188,12 @@ const utils = {
       page.routine();
     });
   },
-
-  decompter: function (lequel) {
-    let n = 0,
-      m = 0;
-
-    let secondes = "";
-    if (n <= 60) {
-      let timout = setInterval(() => {
-        n++;
-        if (n === 60) {
-          n = 0;
-          m++;
-        }
-        //***on a atteind la durée de l'exercice */
-        if (m >= exerciseArray[0].min) {
-          clearInterval(timout);
-          return;
-        }
-        if (n < 9) {
-          secondes = "0" + n;
-        } else {
-          secondes = n;
-        }
-
-        document.getElementById(
-          "decompte"
-        ).innerText = `${m} mn ${secondes} s.`;
-      }, 100);
-    }
-  },
 };
 
 //*************  PAGE LOBBY */
 const page = {
   lobby: function () {
+    stopActif = false;
     //préparation des cards
     let mapArray = exerciseArray
       .map(
@@ -259,7 +233,7 @@ const page = {
       exercise.updateCountdown(),
       "<button id='start' class= 'stop'>Stop</button>"
     );
-//***arret d'urgence */
+    //***arret d'urgence */
     document.querySelector(".stop").addEventListener("click", (e) => {
       stopActif = true;
     });
@@ -286,5 +260,5 @@ const page = {
   },
 };
 // page.finish();
-//page.lobby();
-page.routine();
+page.lobby();
+//page.routine();
