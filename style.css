@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
 
 * {
   margin: 0;
@@ -15,15 +15,14 @@ button {
   border: none;
   outline: none;
   transition: 0.25s;
-  box-shadow: -20px 20px 60px #75c3d463, 20px -20px 60px #9fffff;
+  box-shadow: -20px 20px 60px #1154a163, 20px -20px 60px #3b4368;
 }
 button:hover {
   transform: translateX(4px);
   background: white;
 }
 body {
-  background: url(./img/Salar-de-Uyuni-Bolivia-Dry-salt-flats-Travelwithmk.com_.jpg)
-    fixed center/cover;
+  background: url(./img/BOREAL_0613.jpg) fixed center/cover;
 }
 h1 {
   font-size: 2.2rem;
@@ -36,8 +35,8 @@ h1 {
   padding: 10px 14px;
   border-radius: 9px;
   margin-left: 15px;
-  background: #c4f7fc8a;
-  box-shadow: -20px 20px 60px #75c2d4, 20px -20px 60px #9fffff;
+  background: #c4ddfc8a;
+  box-shadow: -20px 20px 60px #2c4761, 20px -20px 60px #3b4368;
   cursor: pointer;
   transform: translateY(-5px);
   transition: 0.2s;
@@ -69,7 +68,7 @@ li {
   border-radius: 10px;
   backdrop-filter: blur(2px);
   background: rgba(255, 255, 255, 0.603);
-  box-shadow: -20px 20px 60px #75c2d4, 20px -20px 60px #9fffff;
+  box-shadow: -10px 10px 10px #2c4761, 20px -20px 60px #3b4368;
   display: grid;
   grid-template-rows: 30px 1fr 35px;
   grid-template-columns: 50% 50%;
@@ -107,10 +106,10 @@ img {
 li i {
   margin: 0 8px;
   backdrop-filter: blur(2px);
-  background: rgba(255, 255, 255, 0.8);
-  box-shadow: -20px 20px 60px #75c2d4, 20px -20px 60px #9fffff;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: -20px 20px 60px #2c4761, 20px -20px 60px #3b4368;
   font-size: 1.5rem;
-  color: #81c5d9fe;
+  color: #303d678e;
   border-radius: 16px;
   transition: 0.1s;
   display: grid;
@@ -142,7 +141,7 @@ li i:hover {
   /* background: #74c3c3c2; */
   backdrop-filter: blur(3px);
   background: rgba(255, 255, 255, 0.503);
-  box-shadow: -20px 20px 60px #75c2d4, 20px -20px 60px #aef8f8ad;
+  box-shadow: -20px 20px 60px #2c4761, 20px -20px 60px #3b4368;
   padding: 14px 28px;
   font-size: 1.8rem;
   border-radius: 16px;
@@ -155,7 +154,7 @@ li i:hover {
   /* background: #74c3c3c2; */
   backdrop-filter: blur(3px);
   background: rgba(255, 255, 255, 0.503);
-  box-shadow: -20px 20px 60px #75c2d4, 20px -20px 60px #aef8f8ad;
+  box-shadow: -20px 20px 60px #2c4761, 20px -20px 60px #3b4368;
   padding: 14px 28px;
   font-size: 1.8rem;
   border-radius: 16px;
@@ -179,7 +178,7 @@ li i:hover {
 
   backdrop-filter: blur(3px);
   background: rgba(255, 255, 255, 0.503);
-  box-shadow: -20px 20px 60px #75c2d4, 20px -20px 60px #aef8f8ad;
+  box-shadow: -20px 20px 60px #2c4761, 20px -20px 60px #3b4368;
   padding: 50px 0;
   width: 70%;
   min-width: 250px;
@@ -203,7 +202,7 @@ li i:hover {
 .btn-reboot {
   backdrop-filter: blur(2px);
   background: rgba(255, 255, 255, 0.281);
-  box-shadow: -20px 20px 60px #75c2d4, 20px -20px 60px #9fffff;
+  box-shadow: -20px 20px 60px #7590d4, 20px -20px 60px #3b4368;
   padding: 10px;
   border-radius: 12px;
   font-size: 1.1rem;
